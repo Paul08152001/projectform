@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST"class="Form">
+            <div class="input-control">
+                <label for="fullname">Fullname</label>
+                <input id="fullname" name="fullname" type="text" placeholder="Type your fullname" required>
+            </div>
+            <div class="input-control">
+                <label for="studentnumber">Student Number</label>
+                <input id="studentnumber" name="studentnumber" type="text" placeholder="Type your student number" required>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Type your email" required>
+            </div>
+            <div class="gender-name">
+                <span class="gender-details">Gender</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="input-control">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select your course</option>
+                    <option value="BSCS">BSCS</option>
+                    <option value="BSELE">BSELE</option>
+                    <option value="BSCRIM">BSCRIM</option>
+                    <option value="BSED">BSED</option>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSCOE">BSCOE</option>
+                </select>
+            </div>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>
